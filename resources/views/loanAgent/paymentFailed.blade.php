@@ -12,7 +12,8 @@
                     <div class="card-body">
                         <div class="text-center mb-20">
                             <h4 class="fw-bolder text-danger mb-15">Payment Unsuccessful </h4>
-                            <p>We regret to inform you that your subscription plan payment was not successful. </p>
+                            <h4 class="fw-bolder text-danger mb-15">Sorry</h4>
+                            <p>Your Subscription Plan Payment Was not Successful. </p>
                         </div>
 
                         <hr class="divider my-3" />

@@ -135,26 +135,26 @@ if (!function_exists('raiseRequestFaqs')) {
             <ul class="accordion">
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">My payment was successful, but my account has not been created yet. Why?</h6>
+                        <h6 class="s-16 w-500">I paid, but my account has not yet been created. What do I do? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                In some cases, the payment may still be under processing by the payment gateway or banking network. Your account will be activated once the payment is successfully credited to the company’s account. If the transaction fails or is not completed, the payment gateway may automatically initiate a refund according to their policies.</p>
+                                This could occur if the payment gateway holds your funds but has yet to credit the company account. Do not worry; once the funds have been credited to the company account, your account will be created and you will be notified via email. Otherwise, the payment gateway will refund your funds according to its policies.</p>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I made the payment but later realized I did not fully understand the services. Can I request a refund?</h6>
+                        <h6 class="s-16 w-500">Despite the fact that it has been so many days, I still have not received my refund. What do I do? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Subscription charges are refundable only as per the company’s Cancellation and Refund Policy. To review the detailed policy guidelines, please refer to the relevant section on the website.
+                                    This could happen if your funds are held by the bank/payment gateway. It will be refunded in accordance with the bank/payment gateway terms and conditions.
                                 </p>
                             </div>
                         </div>
@@ -162,13 +162,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I am not satisfied with the services. What should I do?</h6>
+                        <h6 class="s-16 w-500">I misunderstood the company service and/or paid by mistake. Can I receive a refund?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    We recommend contacting our support team to discuss your concerns so that we can assist you appropriately. You may reach us at +91-{#VAR#} between 10:00 AM and 5:00 PM on working days.
+                                    The subscription plan payment is only refundable under the company cancellation and refund policy. 
                                 </p>
                             </div>
                         </div>
@@ -176,13 +176,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Who is eligible for a GST refund?</h6>
+                        <h6 class="s-16 w-500">Despite being shown pre-approved loan offers based on my eligibility, I did not get one.Why? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Customers who provide valid GST details on the platform during the application process may be eligible for a GST-related adjustment or refund as per applicable policies.
+                                   Please read the company’s terms and conditions to get a clear understanding of what a pre-approval loan offer is.
                                 </p>
                             </div>
                         </div>
@@ -190,13 +190,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I accidentally made multiple payments. Can I get the extra amount refunded?</h6>
+                        <h6 class="s-16 w-500">Who qualifies for a GST return?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    If multiple payments were made unintentionally, you can submit a request through the “Raise a Request” section on the platform or contact the support team within 48 hours of the transaction.
+                                    Anyone who updates their GST information through the portal will receive a GST return.
                                 </p>
                             </div>
                         </div>
@@ -204,13 +204,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I purchased a subscription from another company within the same group. Can I request a refund?</h6>
+                        <h6 class="s-16 w-500">I have changed my mind and no longer wish to use the company services. Can I get a refund?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    If multiple memberships or subscriptions have been purchased across companies belonging to the same group, you may request assistance through the “Raise a Request” section or contact the support team within 48 hours of the transaction
+                                    The subscription plan payment is only refundable according to the company cancellation and refund policy.
                                 </p>
                             </div>
                         </div>
@@ -218,13 +218,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I submitted a refund request but have not received the refund yet. What should I do?</h6>
+                        <h6 class="s-16 w-500">I am not happy with the company service. What do I do?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Refund timelines may sometimes be affected if the payment gateway or bank is holding the funds temporarily. Once processed, the refund will be credited according to the policies and timelines of the respective bank or payment gateway.
+                                   We request you to kindly call the company on +91-87874-98489 between 10 AM to 5 PM- Monday to Saturday (only business days). Allow us to discuss your concerns, and we will ensure that you receive the best solutions possible. 
                                 </p>
                             </div>
                         </div>
@@ -232,13 +232,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I saw pre-approved loan offers on the platform but did not receive the final loan. Why?</h6>
+                        <h6 class="s-16 w-500">What happens if I accidentally make multiple payments? Do I qualify for a refund? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Pre-approved offers are indicative and based on the preliminary information provided by the applicant. Final approval, sanction, and disbursement decisions are made solely by the respective lending institution after reviewing the complete profile and documents. For more information, please review the Terms & Conditions section.
+                                    If you accidentally make multiple payments, you are entitled to a refund. You can request a refund within 48 hours of making the payment via the website Raising A Request section or by calling the company registered contact number.
                                 </p>
                             </div>
                         </div>
@@ -246,13 +246,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I changed my mind and no longer wish to continue with the services. Can I get a refund?</h6>
+                        <h6 class="s-16 w-500">Can I get a refund if I buy subscriptions or memberships from multiple companies in your group?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                   Refunds for subscription payments are governed strictly by the company’s Cancellation and Refund Policy. Please refer to the policy section on the website for eligibility criteria and applicable timelines.
+                                   If a customer purchased Subscriptions/Memberships from several companies in our group, they are eligible for a refund. You can request a refund within 48 hours of payment by visiting the website Raising A Request section or calling the company registered phone number.
                                 </p>
                             </div>
                         </div>

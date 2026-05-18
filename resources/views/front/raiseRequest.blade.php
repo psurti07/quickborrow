@@ -136,7 +136,7 @@
             <div class="col-md-6 col-lg-6 col-sm-12 mt-lg-0 mt-35">
                 <div class="faqs-section">
                     <div class="faqs-3-questions">
-                        <h4 class="mb-20 text-center">Frequently Asked Questions</h4>
+                        <h4 class="mb-20 text-center">Common FAQs </h4>
                         <div class="accordion-wrapper">
                             {!! raiseRequestFaqs() !!}
                         </div>

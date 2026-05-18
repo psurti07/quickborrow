@@ -12,9 +12,8 @@
                     <div class="card-body">
                         <div class="text-center mb-20">
                             <h4 class="fw-bolder text-success mb-15">Congratulations!!! </h4>
-                            <p>You have successfully submitted your loan application. </p>
-                            <p>Upload the required documents by logging into your customer portal using the
-                                credentials sent to your registered email address. </p>
+                            <p>Your Loan Application Was Successfully Submitted.</p>
+                            <p>Please sign in to the customer portal with the credentials sent to your registered email address and upload the necessary documents.</p>
                         </div>
 
                         <hr class="divider my-3" />

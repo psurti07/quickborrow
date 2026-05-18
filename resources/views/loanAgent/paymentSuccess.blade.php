@@ -12,9 +12,8 @@
                     <div class="card-body">
                         <div class="text-center mb-20">
                             <h4 class="fw-bolder text-success mb-15">Congratulations!!! </h4>
-                            <p>You have successfully submitted your loan application. </p>
-                            <p>Upload the required documents by logging into your customer portal using the credentials
-                                sent to your registered email address. </p>
+                            <p>Your Loan Application Was Successfully Submitted.</p>
+                            <p>Please sign in to the customer portal with the credentials sent to your registered email address and upload the necessary documents.</p>
                         </div>
 
                         <hr class="divider my-3" />
@@ -51,7 +50,7 @@
                                 class="btn btn-xs r-06 btn--theme hover--tra-black px-3 py-3">Access Pre-Approved
                                 Offers!</a>
 
-                            <p class="text-center mt-20">For any further queries, raise a request here: <a
+                            <p class="text-center mt-20">For any further queries, raise a request here : <a
                                     href="{{ route('front.raise.request') }}" class="text-success">Click Here</a></p>
                         </div>
 
