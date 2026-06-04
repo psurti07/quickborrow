@@ -58,11 +58,11 @@
 				<div class="container">
 					<div class="row align-items-center justify-content-center">
 						<div class="col-md-6 col-lg-6 col-12">	
-							<div class="register-page-form">
+							<div class="register-page-form border-success border">
 								<!-- TITLE -->
 								<div class="col-md-12">
 									<div class="register-form-title">
-                    <img src="{{ asset('front/images/logo/logo.png') }}" width="200" alt="{{ env('APP_NAME') }}">
+                    <img src="{{ asset('front/images/logo/logo.png') }}" width="150" alt="{{ env('APP_NAME') }}">
 										<h4 class="mt-20 w-700">Log in to Portal</h4>
 									</div>
 								</div>
@@ -89,16 +89,16 @@
                     <!-- Reset Password Link -->
                     <div class="col-md-12">
                       <div class="reset-password-link text-end">
-                        <p class="p-sm"><a href="{{ route('customer.forget.password') }}" class="color--theme">Forgot your password?</a></p>
+                        <p class="p-sm mb-0"><a href="{{ route('customer.forget.password') }}" class="color--theme">Forgot your password?</a></p>
                       </div>
                     </div>
                     <!-- Form Submit Button -->
                     <div class="col-md-12">
-                      <button type="submit" class="btn btn--theme hover--theme submit btn-login mt-0">Log In</button>
+                      <button type="submit" class="btn btn--theme  hover--tra-black submit btn-login mt-0">Log In</button>
                     </div>
                     <!-- Sign Up Link -->
                     <div class="col-md-12">
-                      <p class="create-account text-center">
+                      <p class="create-account text-center mt-0">
                         Don't have an account? <a href="{{ route('self.apply.main') }}" class="color--theme">Sign up</a>
                       </p>
                     </div>

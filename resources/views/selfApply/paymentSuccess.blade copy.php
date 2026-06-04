@@ -8,7 +8,7 @@
         #counts{ font-size:20px;color:green;font-weight:bold; }
     </style>
 @endpush
-
+bg--white-100 bg--fixed pb-80 personal-details-form d-flex align-items-center
 @section('content')
     <section id="contacts" class="gr--white personal-details-form pb-100 inner-page-hero contacts-section division">
         <div class="container">

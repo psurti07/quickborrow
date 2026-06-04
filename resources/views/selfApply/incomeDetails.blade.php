@@ -22,7 +22,7 @@
 @endpush
 @section('content')
     <!-- main section starts -->
-    <section class="bg--white-100 bg--fixed hero-section personal-details-form pt-100 pb-80 min-vh-100 d-flex align-items-center">
+    <section class="bg--white-100 bg--fixed pb-80 personal-details-form d-flex align-items-center">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <!-- <div class="col-md-6 col-lg-6">
@@ -95,7 +95,7 @@
                                 </div>
 
                                 <div class="col-md-12 form-btn">
-                                    <button type="submit" class="btn btn--theme hover--theme submit processNowBtn" id="processNowBtn" onclick="_tfa.push({notify: 'event', name: 'self_lead', id: 1776413})">Process Now</button>
+                                    <button type="submit" class="btn btn--theme hover--tra-black submit processNowBtn" id="processNowBtn" onclick="_tfa.push({notify: 'event', name: 'self_lead', id: 1776413})">Process Now</button>
                                 </div>
                             </div>
                         </form>

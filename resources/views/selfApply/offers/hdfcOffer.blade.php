@@ -87,7 +87,7 @@
                                     <input class="form-check-input" value="1" type="hidden" id="flexCheckDefault1" checked name="allow_sms"/>
                                     <input class="form-check-input" value="1" type="hidden" id="flexCheckDefault" checked name="accept_tnc"/>
                                     <div class="col-md-12 form-btn">
-                                        <button type="submit" id="submit-btn" class="btn btn--theme hover--theme submit-btn">Apply Now</button>
+                                        <button type="submit" id="submit-btn" class="btn btn--theme hover--tra-black submit-btn">Apply Now</button>
                                     </div>
                                 </div>
                             </form>

@@ -13,13 +13,10 @@
     }
 
     .radio:checked {
-        background: #0e5281;
-        border-color: #0e5281;
+        background: #52ba7a;
+        border-color: #52ba7a;
     }
-
-    .owl-carousel .owl-item img {
-        width: 100% !important;
-    }
+ 
 
     .testimonials-carousel .owl-item img {
         width: 100% !important;
@@ -65,8 +62,8 @@
 @section('content')
 <section id="hero-201" class="bg--white-100 bg--fixed">
     <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form mb-lg-0 mb-3">
                 <div id="hero-8-form" class="border border-primary r-06">
                     <h4 class="s-20 w-700 mb-2">Apply in <span class="color--green-500">5 Minutes</span></h4>
                     <p class="s-16">Get instant pre-approved offers.</p>
@@ -125,7 +122,7 @@
                                 @component('components.ajax-error',['field'=>'mobile'])@endcomponent
                             </div>
                             <div class="col-md-12 form-btn">
-                                <button type="submit" id="checkmodal" class="btn btn--theme hover--theme submit">Apply Now</button>
+                                <button type="submit" id="checkmodal" class="btn btn--theme hover--tra-black submit">Apply Now</button>
                             </div>
                             <div class="col-md-12"><span class="text-danger" id="usererrormsg"></span></div>
                         </div>
@@ -134,12 +131,17 @@
                     </form>
                 </div>
             </div>
+                 <div class="col-md-12 col-lg-6">
+                    <div class="img-block">
+     <img src="{{ asset('front/images/about-img.png') }}" alt="quikborrow" class="img-fluid p-0 m-auto">
+            </div>
+</div>
         </div>
     </div>
 </section>
 
 <!-- Affiliate NBFCs section starts -->
-<section id="integrations-2" class="pt-0 pb-80 integrations-section">
+<section id="integrations-2" class="py-80 integrations-section bg--green-100">
     <div class="container">
         <div class="r-12 text-center">
             <div class="row justify-content-center">
@@ -167,7 +169,7 @@
 </section>
 <!-- Affiliate NBFCs section ends -->
 
-<section id="features-6" class="pt-0 pb-80 features-section division">
+<section id="features-6" class="py-80 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9">
@@ -180,59 +182,63 @@
         <div class="fbox-wrapper text-center">
             <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
-                    <div class="fbox-8 fbox--hover fb-1 r-12 border">
+                    <div class="fbox-8 fb-1 r-12 border h-100">
+                        <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                            <h4 class="s-18 w-700">Strategic Lending Network</h4>
+                            <p>Access multiple NBFC-backed lending options through a single digital interface.</p>
+                        </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
                                 <img class="img-fluid"
                                 src="{{ asset('front/images/Strategic-Lending-Network.png') }}" alt="feature-image">
                             </div>
                         </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Strategic Lending Network</h4>
-                            <p>Access multiple NBFC-backed lending options through a single digital interface.</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
+                    <div class="fbox-8 fb-2 r-12 border h-100">
+                          <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                            <h4 class="s-18 w-700">Completely Online Process</h4>
+                            <p>From eligibility check to document submission, everything happens digitally.</p>
+                        </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
                                   <img class="img-fluid"
                                 src="{{ asset('front/images/Completely-Online-Process.png') }}" alt="feature-image">
                             </div>
                         </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Completely Online Process</h4>
-                            <p>From eligibility check to document submission, everything happens digitally.</p>
-                        </div>
+                      
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8 fbox--hover fb-2 r-12 border">
-                        <div class="fbox-ico ico-50">
-                            <div class="shape-ico color--theme">
-                          <img class="img-fluid"
-                                src="{{ asset('front/images/Self-Apply-Feature.png') }}" alt="feature-image">
-                            </div>
-                        </div>
-                        <div class="fbox-txt">
+                    <div class="fbox-8 fb-2 r-12 border h-100">
+                         <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Self-Apply Feature</h4>
                             <p>Take control of your finances while enjoying the benefits of excellent provisions.</p>
                         </div>
+                        <div class="fbox-ico ico-50">
+                            <div class="shape-ico color--theme">
+                          <img class="img-fluid"
+                                src="{{ asset('front/images/Quick-Self-Apply.png') }}" alt="feature-image">
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
                 <div class="col">
-                    <div class="fbox-8 fbox--hover fb-3 r-12 border">
+                    <div class="fbox-8 fb-2 r-12 border h-100">
+                         <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                            <h4 class="s-18 w-700">Hire Loan Agent</h4>
+                            <p>Get guidance from experienced professionals to improve your loan approval possibilities.</p>
+                        </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
                                   <img class="img-fluid"
                                 src="{{ asset('front/images/Loan-Agent.png') }}" alt="feature-image">
                             </div>
                         </div>
-                        <div class="fbox-txt">
-                            <h4 class="s-18 w-700">Hire Loan Agent</h4>
-                            <p>Get guidance from experienced professionals to improve your loan approval possibilities.</p>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -329,7 +335,7 @@
                         <p class="s-12">Didn’t receive the code? <a href="javascript:;" id="resendOtp" class="text-success">Resend OTP</a>&nbsp;<span id="timer" class="text-success">(00:15)</span></p>
                     </div>
                 </div>
-                <button type="submit" id="otpBtn" class="btn btn--theme hover--theme submit mt-3">Verify OTP</button>
+                <button type="submit" id="otpBtn" class="btn btn--theme hover--tra-black submit mt-3">Verify OTP</button>
             </form>
         </div>
     </div>

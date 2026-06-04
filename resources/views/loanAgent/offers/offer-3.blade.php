@@ -9,13 +9,13 @@
 </style>
 @endpush
 @section('content')
-<section id="hero-7" class="bg--fixed hero-section bg--green-100">
+<section id="hero-7" class="bg--fixed hero-section pb-0">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-12 col-lg-6 order-2 order-md-2 order-lg-1 m-auto">
                 <div class="img-block">
                     <img src="{{ asset('front/images/offer/loan-agent-ultra-saver-offer.jpg') }}" alt="selfapply nbfc list"
-                        class="img-fluid rounded-3">
+                        class="img-fluid rounded-3 w-100">
                 </div>
             </div>
             <div class="col-md-12 col-lg-6 self-apply-form order-1 order-md-1 order-lg-2 mb-lg-0 mb-25">
@@ -98,11 +98,11 @@
                                 name="accept_tnc" />
                             <div class="col-md-12 form-btn">
                                 <button type="submit" id="submit-btn"
-                                    class="btn btn--theme hover--theme submit-btn">Apply Now</button>
+                                    class="btn btn--theme hover--tra-black submit-btn">Apply Now</button>
                             </div>
                         </div>
                     </form>
-                    <p class="p-sm mt-3 mb-0">By submitting the form & proceeding, you agree to the <a
+                    <p class="p-sm mt-3 mb-0 text-start">By submitting the form & proceeding, you agree to the <a
                             href="{{ route('front.terms.conditions') }}" target="_blank"
                             class="text-dark text-decoration-none">Terms</a> and <a
                             href="{{ route('front.privacy.policy') }}" target="_blank"

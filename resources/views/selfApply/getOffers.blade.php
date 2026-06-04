@@ -187,7 +187,7 @@ body {
                                 </div>
                             </div>
                             <div class="col-md-12 form-btn mt-4">
-                                <button type="submit" class="btn btn--theme hover--theme submit unlockBtn w-100">Unlock
+                                <button type="submit" class="btn btn--theme hover--tra-black submit unlockBtn w-100">Unlock
                                     Your Offers!</button>
                             </div>
                         </form>

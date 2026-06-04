@@ -13,7 +13,7 @@ class LegalController extends Controller
     {
         $meta = privacyPolicyMeta();
         $mainTitle = 'Privacy Policy';
-        $subTitle = '';
+        $subTitle = 'Learn how QuikBorrow collects, uses, protects, and safeguards your personal information.';
         $description = InfoPages::select('content')->where('slug', 'privacy-policy')->first()->content;
         return view('front.legalPages', compact('meta', 'description', 'mainTitle', 'subTitle'));
     }
@@ -22,7 +22,7 @@ class LegalController extends Controller
     {
         $meta = termsConditionsMeta();
         $mainTitle = 'Terms & Conditions';
-        $subTitle = '';
+        $subTitle = 'Understand the rules, responsibilities, and conditions of using our platform.';
         $description = InfoPages::select('content')->where('slug', 'terms-conditions')->first()->content;
         return view('front.legalPages', compact('meta', 'description', 'mainTitle', 'subTitle'));
     }
@@ -31,7 +31,7 @@ class LegalController extends Controller
     {
         $meta = refundPolicyMeta();
         $mainTitle = 'Cancellation & Refund Policy';
-        $subTitle = '';
+        $subTitle = 'Learn about our cancellation process, eligibility, and refund policies.';
         $description = InfoPages::select('content')->where('slug', 'refund-policy')->first()->content;
         return view('front.legalPages', compact('meta', 'description', 'mainTitle', 'subTitle'));
     }
@@ -40,7 +40,7 @@ class LegalController extends Controller
     {
         $meta = disclaimerMeta();
         $mainTitle = 'Disclaimer';
-        $subTitle = '';
+        $subTitle = 'Please review our disclaimer to understand service limitations and responsibilities.';
         $description = InfoPages::select('content')->where('slug', 'disclaimer')->first()->content;
         return view('front.legalPages', compact('meta', 'description', 'mainTitle', 'subTitle'));
     }

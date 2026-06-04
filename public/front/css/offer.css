@@ -66,9 +66,6 @@
         display:block!important;
     }
 
-    .owl-carousel .owl-item img{
-        width: 100%!important;
-    }
 
     .radio:checked {
         background: #16b85c;

@@ -99,7 +99,7 @@
                     </p>
                     <h6 class="s-14 w-700 mt-15 kbz-h6 text-light" style="margin-bottom:5px!important;">Address</h6>
                     <p class="footer-mail-link ico-25">
-                        <a href="javascript:;" class="text-light">{{ env('COMPANY_ADDRESS') }}</a>
+                        <p class="text-light">{{ env('COMPANY_ADDRESS') }}</p>
                     </p>
                 </div>
             </div>

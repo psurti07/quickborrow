@@ -116,7 +116,7 @@ if (!function_exists('nbfcsList')) {
                             </a>
                         </div>';
 
-            $data['carousel'] .= '<div class="bg--white-100 r-10 mb-20">
+            $data['carousel'] .= '<div class="bg--white-100 r-10 mb-20 p-2 border">
                                     <a href="javascript:;">
                                         <img class="img-fluid" src="https://manage.quikborrow.com/upload/banks/' . $bank->bank_image . '" alt="' . $bank->bank_name . '" width="auto">
                                     </a>
@@ -133,9 +133,9 @@ if (!function_exists('raiseRequestFaqs')) {
     {
         return '
             <ul class="accordion">
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I paid, but my account has not yet been created. What do I do? </h6>
+                        <h6 class="s-16 w-500 mb-0">I paid, but my account has not yet been created. What do I do? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -146,9 +146,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Despite the fact that it has been so many days, I still have not received my refund. What do I do? </h6>
+                        <h6 class="s-16 w-500 mb-0">Despite the fact that it has been so many days, I still have not received my refund. What do I do? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -160,9 +160,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I misunderstood the company service and/or paid by mistake. Can I receive a refund?</h6>
+                        <h6 class="s-16 w-500 mb-0">I misunderstood the company service and/or paid by mistake. Can I receive a refund?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -174,9 +174,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Despite being shown pre-approved loan offers based on my eligibility, I did not get one.Why? </h6>
+                        <h6 class="s-16 w-500 mb-0">Despite being shown pre-approved loan offers based on my eligibility, I did not get one.Why? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -188,9 +188,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Who qualifies for a GST return?</h6>
+                        <h6 class="s-16 w-500 mb-0">Who qualifies for a GST return?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -202,9 +202,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I have changed my mind and no longer wish to use the company services. Can I get a refund?</h6>
+                        <h6 class="s-16 w-500 mb-0">I have changed my mind and no longer wish to use the company services. Can I get a refund?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -216,9 +216,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I am not happy with the company service. What do I do?</h6>
+                        <h6 class="s-16 w-500 mb-0">I am not happy with the company service. What do I do?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -230,9 +230,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">What happens if I accidentally make multiple payments? Do I qualify for a refund? </h6>
+                        <h6 class="s-16 w-500 mb-0">What happens if I accidentally make multiple payments? Do I qualify for a refund? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
@@ -244,9 +244,9 @@ if (!function_exists('raiseRequestFaqs')) {
                         </div>
                     </div>
                 </li>
-                <li class="accordion-item mb-10">
+                <li class="accordion-item mb-0">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Can I get a refund if I buy subscriptions or memberships from multiple companies in your group?</h6>
+                        <h6 class="s-16 w-500 mb-0">Can I get a refund if I buy subscriptions or memberships from multiple companies in your group?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
