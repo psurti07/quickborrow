@@ -247,7 +247,7 @@
 </section>
 <!-- why quikborrow section ends -->
 
-<section class="simple-process-section py-80">
+<!-- <section class="simple-process-section py-80">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
@@ -287,7 +287,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- eligibility calculator starts -->
 <section id="features-21" class="py-80 features-section division">

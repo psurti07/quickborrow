@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'COMPANY_CODE' => 'ESALN2692',
+    'COMPANY_CODE' => 'QIKBRW5678',
     'LA_OFFER_1' => 'la-offer-1',
     'LA_OFFER_2' => 'la-offer-2',
     'LA_OFFER_3' => 'la-offer-3',
