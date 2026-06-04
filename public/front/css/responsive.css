@@ -3188,7 +3188,7 @@
   .hero-20-txt { padding: 0; }
 
   /* HERO-201 */
-  #hero-201{ text-align: center; padding-top: 130px; padding-bottom: 60px; }
+  #hero-201{ text-align: center; padding-top: 130px; padding-bottom: 40px; }
   #hero-201:after { width: 100%; }
   .hero-201-txt { padding: 0; }
 
@@ -7261,7 +7261,7 @@
   .hero-section .hero-20-txt h2.s-48 { margin-bottom: 20px; }
 
   /* HERO-201 */
-  #hero-201 { padding-top: 120px; padding-bottom: 80px; }
+  #hero-201 { padding-top: 120px; padding-bottom: 40px; }
   .hero-201-txt { padding: 0 3%; }
   .hero-201-txt .hero-logo { display: none; }
   .hero-section .hero-201-txt h2.s-48 { margin-bottom: 20px; }

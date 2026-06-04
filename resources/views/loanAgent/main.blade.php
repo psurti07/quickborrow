@@ -146,7 +146,7 @@
             </div>
             <div class="col-md-12 col-lg-6">
                 <div class="img-block">
-                    <img src="{{ asset('front/images/about-img.png') }}" alt="quikborrow" class="img-fluid p-0">
+                    <img src="{{ asset('front/images/loan-agent-img.png') }}" alt="quikborrow" class="img-fluid p-0">
                 </div>
             </div>
         </div>
