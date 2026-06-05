@@ -67,7 +67,7 @@
                                                                                             <img src="https://quikborrow.com/public/front/images/logo/logo.png"
                                                                                                 alt="QuikBorrow"
                                                                                                 style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                                                width="150" height="50"
+                                                                                                width="150"
                                                                                                 title="QuikBorrow">
                                                                                         </a>
                                                                                     </td>
@@ -112,9 +112,9 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center"
-                                                                                        style="padding: 20px; margin: 0; line-height: 2rem;    background-color: #f5fff9;border-top-right-radius:12px;border-top-left-radius:12px;">
+                                                                                        style="padding: 20px; margin: 0; line-height: 2rem;    background-color: #e7f6f3;border-top-right-radius:12px;border-top-left-radius:12px;">
                                                                                         <p
-                                                                                            style="font-size:2.2rem;color:#0e5281;font-weight:600">
+                                                                                            style="font-size:2.2rem;color:#005653;font-weight:600">
                                                                                             Congratulations !
                                                                                         </p>
                                                                                     </td>

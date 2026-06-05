@@ -93,7 +93,7 @@
                                                                             <img src="https://quikborrow.com/public/front/images/logo/logo.png"
                                                                                 alt="QuikBorrow"
                                                                                 style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                                width="150" height="50"
+                                                                                width="150"
                                                                                 title="QuikBorrow">
                                                                             </a>
                                                                         </td>
@@ -123,23 +123,23 @@
                                                             style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;">
                                                             <table cellpadding="0" cellspacing="0" class="es-left"
                                                                 align="left"
-                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #f5fff9;border: 1px solid #f5fff9;  border-radius: 12px; display: block;">
+                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #e7f6f3;border: 1px solid #e7f6f3;  border-radius: 12px; display: block;">
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="es-m-p20b" align="left"
                                                                             style="padding: 0; margin: 0; width: 600px;">
-                                                                            <h3 style="text-align:center; color: #0e5281;font-family: Poppins, sans-serif;">
+                                                                            <h3 style="text-align:center; color: #005653;font-family: Poppins, sans-serif;">
                                                                                 Personal Details / Subscription Details
                                                                             </h3>
                                                                             <hr>
                                                                             <table cellpadding="0" cellspacing="0"
                                                                                 width="100%" bgcolor="#ffffff"
-                                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: separate;border-spacing: 0; border-radius: 15px;/* border: 1px solid #f5fff9; */ background-color: transparent;"
+                                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: separate;border-spacing: 0; border-radius: 15px;/* border: 1px solid #e7f6f3; */ background-color: transparent;"
                                                                                 role="presentation">
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td
-                                                                                            style="padding:0  20px; margin: 0; line-height: 1.5rem;background-color: #f5fff9; color:#000;font-size:16px; border-radius: 12px;font-family: Poppins, sans-serif;">
+                                                                                            style="padding:0  20px; margin: 0; line-height: 1.5rem;background-color: #e7f6f3; color:#000;font-size:16px; border-radius: 12px;font-family: Poppins, sans-serif;">
                                                                                             <p style="margin: 0;">Full Name :<span></span>
                                                                                                 <h5 style="margin:0;">{{ $userData->first_name }}&nbsp;{{ $userData->last_name }}</h5>
                                                                                             </p>
@@ -151,7 +151,7 @@
                                                                                             </p>
                                                                                         </td>
                                                                                         <td align="left"
-                                                                                            style="padding:0 20px; margin: 0; line-height: 1.5rem;background-color: #f5fff9;  color:#000;font-size:16px;border-radius: 12px;font-family: Poppins, sans-serif;">
+                                                                                            style="padding:0 20px; margin: 0; line-height: 1.5rem;background-color: #e7f6f3;  color:#000;font-size:16px;border-radius: 12px;font-family: Poppins, sans-serif;">
                                                                                             <p style="margin: 0;">Subscription Name / Invoice No :
                                                                                             <h5 style="margin: 0;">{{ $plan }} / {{ $invoice->inv_prefix }}{{ $invoice->inv_number }}</h5>
                                                                                             </p>
@@ -195,18 +195,18 @@
                                                             style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;">
                                                             <table cellpadding="0" cellspacing="0" class="es-left"
                                                                 align="left"
-                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #f5fff9;border: 1px solid #f5fff9;  border-radius: 12px; display: block;">
+                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #e7f6f3;border: 1px solid #e7f6f3;  border-radius: 12px; display: block;">
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="es-m-p20b" align="left"
                                                                             style="padding: 0; margin: 0; width: 600px;">
-                                                                            <h3 style="text-align:center; color: #0e5281;font-family: Poppins, sans-serif;">
+                                                                            <h3 style="text-align:center; color: #005653;font-family: Poppins, sans-serif;">
                                                                                 Agent Details
                                                                             </h3>
                                                                             <hr>
                                                                             <table width="100%" bgcolor="#ffffff" style="border-radius: 15px; background-color: transparent;margin-bottom:15px;">
                                                                                 <tr>
-                                                                                    <td style="padding: 0 20px; background-color: #f5fff9; color: #000; font-size: 16px; border-radius: 12px;font-family: Poppins, sans-serif;">
+                                                                                    <td style="padding: 0 20px; background-color: #e7f6f3; color: #000; font-size: 16px; border-radius: 12px;font-family: Poppins, sans-serif;">
                                                                                         <table width="100%" style="width: 100%;">
                                                                                             <tr>
                                                                                                 <td><p style="margin:0">Agent Name :</p></td>
@@ -252,15 +252,15 @@
                                                             style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;">
                                                             <table cellpadding="0" cellspacing="0" class="es-left"
                                                                 align="left"
-                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #f5fff9;border: 1px solid #f5fff9;  border-radius: 12px; display: block;">
+                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #e7f6f3;border: 1px solid #e7f6f3;  border-radius: 12px; display: block;">
                                                                 <tbody>
                                                                                                                                         <tr>
                                                                         <td class="es-m-p20b" align="left"
                                                                             style="padding: 0; margin: 0; width: 600px;">
-                                                                            <h3 style="text-align:center; color: #0e5281;font-family: Poppins, sans-serif;">
+                                                                            <h3 style="text-align:center; color: #005653;font-family: Poppins, sans-serif;">
                                                                                 Pre-Approved Offers
                                                                             </h3>
-                                                                            <span style="display:flex; justify-content:center; color: #0e5281;font-family: Poppins, sans-serif;">Loan Amount - ₹&nbsp;<strong>{{ formatePriceIndia($offers[0]->loanAmount) }}</strong></span>
+                                                                            <span style="display:flex; justify-content:center; color: #005653;font-family: Poppins, sans-serif;">Loan Amount - ₹&nbsp;<strong>{{ formatePriceIndia($offers[0]->loanAmount) }}</strong></span>
                                                                             <hr>
                                                                             <table class="offers-table">
                                                                                 <thead>
@@ -316,12 +316,12 @@
                                                             style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;">
                                                             <table cellpadding="0" cellspacing="0" class="es-left"
                                                                 align="left"
-                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #f5fff9;border: 1px solid #f5fff9;  border-radius: 12px; display: block;">
+                                                                style="mso-table-lspace: 0;mso-table-rspace: 0;border-collapse: collapse;border-spacing: 0;float: left;background-color: #e7f6f3;border: 1px solid #e7f6f3;  border-radius: 12px; display: block;">
                                                                 <tbody>
                                                                                                                                         <tr>
                                                                         <td class="es-m-p20b" align="left"
                                                                             style="padding: 0; margin: 0; width: 600px;">
-                                                                            <h3 style="text-align:center; color: #0e5281; font-family: Poppins, sans-serif;">
+                                                                            <h3 style="text-align:center; color: #005653; font-family: Poppins, sans-serif;">
                                                                                 Service Timeline
                                                                             </h3>
                                                                             <hr>

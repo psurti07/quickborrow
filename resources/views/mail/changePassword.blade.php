@@ -67,7 +67,7 @@
                                                                                             <img src="https://quikborrow.com/public/front/images/logo/logo.png"
                                                                                                 alt="QuikBorrow"
                                                                                                 style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                                                width="150" height="50"
+                                                                                                width="150"
                                                                                                 title="QuikBorrow">
                                                                                         </a>
                                                                                     </td>
@@ -113,7 +113,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="left"
-                                                                                        style="padding: 20px; margin: 0; line-height: 1.5rem;background-color: #f5fff9; border-radius:12px;color:#000;font-size:16px">
+                                                                                        style="padding: 20px; margin: 0; line-height: 1.5rem;background-color: #e7f6f3; border-radius:12px;color:#000;font-size:16px">
                                                                                         <p><strong>Dear {{ $fullname }},</strong></p>
                                                                                         <p>We wanted to inform you that your account password has been successfully changed.</p>
                                                                                         <p>Here are your new login details:</p>

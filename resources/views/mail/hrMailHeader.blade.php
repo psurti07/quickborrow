@@ -506,7 +506,7 @@
                                                                                             <img src="https://quikborrow.com/public/front/images/logo/logo.png"
                                                                                                 alt="QuikBorrow"
                                                                                                 style="display: block; border: 0; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic;"
-                                                                                                width="150" height="50"
+                                                                                                width="150"
                                                                                                 title="QuikBorrow">
                                                                                         </a>
                                                                                     </td>
@@ -547,9 +547,9 @@
                                                                 style="mso-table-lspace: 0; mso-table-rspace: 0; border-collapse: separate; border-spacing: 0; background-color: #fff; border-radius: 15px;"
                                                                 role="presentation">
                                                                 <tr>
-                                                                    <td align="left" style="padding: 20px; margin: 0; line-height: 2rem;border: 1px solid #0e5281;
+                                                                    <td align="left" style="padding: 20px; margin: 0; line-height: 2rem;border:1px solid #005653;
                                                                             border-radius: 12px;
-                                                                            background-color: #E9F2FB;">
+                                                                            background-color:#e7f6f3;">
                                                                         @yield('content')
                                                                     </td>
                                                                 </tr>
