@@ -116,7 +116,7 @@ if (!function_exists('nbfcsList')) {
                             </a>
                         </div>';
 
-            $data['carousel'] .= '<div class="bg--white-100 r-10 mb-20 p-2 border">
+            $data['carousel'] .= '<div class="bg--white-100 r-10 mb-0 p-2 border">
                                     <a href="javascript:;">
                                         <img class="img-fluid" src="https://manage.quikborrow.com/upload/banks/' . $bank->bank_image . '" alt="' . $bank->bank_name . '" width="auto">
                                     </a>

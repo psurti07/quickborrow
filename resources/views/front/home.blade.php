@@ -247,7 +247,7 @@
 </section>
 <!-- why quikborrow section ends -->
 
-<section class="simple-process-section py-80">
+<!-- <section class="simple-process-section py-80">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
@@ -287,10 +287,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- eligibility calculator starts -->
-<section id="features-21" class="py-80 features-section division">
+<section id="features-21" class="pt-0 pb-80 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10">
@@ -571,9 +571,9 @@
             </div>
             <div class="col-12 col-lg-6 align-items-center m-auto mt-0">
                 <div class="row fbox-wrapper
-                     mb-4 fbox-8 fb-1 p-0 border-0">
+                     mb-0 fbox-8 fb-1 p-0 border-0">
                     <div class="col-12 col-lg-12">
-                        <div class="txt-block right-column card-left p-4 r-12">
+                        <div class="txt-block right-column card-left p-4 r-12 mb-md-3 mb-0">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="fbox-ico ico-50 text-end mb-0">
                                     <div class="shape-ico color--theme">
@@ -594,8 +594,8 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-12">
-                        <div class="txt-block left-column card-left p-4 r-12">
-                            <div class="d-flex align-items-center mb-3">
+                        <div class="left-column card-left p-4 r-12">
+                            <div class="d-flex align-items-center mb-0">
                                 <div class="fbox-ico ico-50 text-end mb-0">
                                     <div class="shape-ico color--theme">
                                         <img class="img-fluid" src="{{ asset('front/images/Hire-Loan-Agent.png') }}"
