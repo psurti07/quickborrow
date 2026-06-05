@@ -1067,7 +1067,7 @@ class LoanAgentController extends Controller
                     $remote_data = array(
                         'company_code' => config('constant.COMPANY_CODE'),
                         'company_local_ip' => '190.92.174.183',
-                        'product_code' => 'HIRE AGENT',
+                        'product_code' => 'HIRELOAN',
                         'customer_name' => $userData->first_name . ' ' . $userData->last_name,
                         'customer_email' => $userData->email,
                         'customer_mobile' => $userData->mobile,
