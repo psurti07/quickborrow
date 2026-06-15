@@ -397,11 +397,8 @@
 /* process step */
 
 .simple-process-section {
-
   background: linear-gradient(135deg, #f5fbf8, #eef7f3);
 }
-
-
 
 .simple-process-section .process-wrapper {
   display: flex;
@@ -423,7 +420,6 @@
   z-index: 0;
 }
 
-
 .simple-process-section .process-step {
   width: 200px;
   text-align: center;
@@ -431,27 +427,21 @@
   z-index: 2;
 }
 
-
 .simple-process-section .step-circle {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background: #fff;
   border: 3px solid #005653;
   color: #005653;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-
   margin: auto auto 20px;
-
   box-shadow:
     0 10px 25px rgba(0, 146, 69, .10);
-
   transition: .4s ease;
 }
 
@@ -461,71 +451,45 @@
   border: 3px solid #005653;
 }
 
-
 .simple-process-section .process-step:hover .step-circle {
   transform: translateY(-8px) scale(1.08);
   box-shadow:
     0 20px 35px rgba(0, 146, 69, .20);
 }
 
-
-.simple-process-section .process-step h4 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.simple-process-section .process-step p {
-  color: #1e1e1e;
-  line-height: 1.7;
-  margin: 0;
-}
-
-
-@media (max-width:1199px) {
-
+@media screen and (max-width:1199px) {
   .simple-process-section .process-step {
     width: 180px;
   }
-
 }
 
-
-@media (max-width:991px) {
-
+@media screen and (max-width:991px) {
   .simple-process-section .process-wrapper {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
 
-
   .simple-process-section .process-wrapper::before {
     display: none;
   }
-
 
   .simple-process-section .process-step {
     width: calc(50% - 20px);
     background: #fff;
     padding: 30px 20px;
     border-radius: 25px;
-
     box-shadow:
       0 10px 30px rgba(0, 0, 0, .05);
   }
 
-
 }
 
-
-@media (max-width:767px) {
-
+@media screen and (max-width:767px) {
   .simple-process-section .process-wrapper {
     flex-direction: column;
     gap: 20px;
   }
-
 
   .simple-process-section .process-step {
     width: 100%;
@@ -538,35 +502,21 @@
     flex-wrap: wrap;
   }
 
-
   .simple-process-section .step-circle {
-    min-width: 70px;
-    width: 70px;
-    height: 70px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
     margin: 0;
     font-size: 20px;
   }
 
-
-  .simple-process-section .process-step h4 {
-    font-size: 20px;
-    margin-bottom: 6px;
-  }
-
-
-  .simple-process-section .process-step p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
 }
 
 
-@media (max-width:480px) {
-
+@media screen and (max-width:480px) {
   .simple-process-section .process-step {
     padding: 18px;
   }
-
 
   .simple-process-section .step-circle {
     min-width: 50px;
@@ -576,7 +526,4 @@
   }
 
 
-  .simple-process-section .process-step h4 {
-    font-size: 18px;
-  }
 }

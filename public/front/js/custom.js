@@ -194,12 +194,12 @@
 			owl.owlCarousel({
 				items: 3,
 				loop:true,
-				// autoplay:true,
+				autoplay:true,
 				navBy: 1,
 				dots:false,
-				// autoplayTimeout: 4500,
-				// autoplayHoverPause: true,
-				// smartSpeed: 1500,
+				autoplayTimeout: 4500,
+				autoplayHoverPause: true,
+				smartSpeed: 1500,
 				responsive:{
 					0:{
 						items:1

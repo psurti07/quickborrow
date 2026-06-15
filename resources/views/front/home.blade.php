@@ -166,10 +166,6 @@
 </section>
 <!-- Our Partners section end  -->
 
-
-
-
-
 <!-- why quikborrow section starts -->
 <section id="features-6" class="py-80 features-section division">
     <div class="container">
@@ -245,52 +241,50 @@
         </div>
     </div>
 </section>
-<!-- why quikborrow section ends -->
 
-<!-- <section class="simple-process-section py-80">
+<!-- why quikborrow section ends -->
+ <section class="simple-process-section py-80">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12">
                 <div class="section-title mb-40">
-                    <h2 class="s-28 mb-5">Let’s <span class="color--green-500">Connect</span></h2>
-                    <p class="description mt-0 s-16 color--grey">Send us a message, and our team will contact you
-                        shortly.</p>
+                    <h2 class="s-28 mb-5">Quick Loan Process in  <span class="color--green-500"> 5 Steps</span></h2>
+                    <p class="description mt-0 s-16 color--grey">From application to approval, everything is simple and easy.</p>
                 </div>
             </div>
         </div>
-
         <div class="process-wrapper">
             <div class="process-step">
                 <div class="step-circle">01</div>
-                <h4 class="color--green-500">Loan Details</h4>
-                <p class="color--grey">Choose your loan amount and requirements.</p>
+                <h4 class="color--green-500 s-20">Start Your Application</h4>
+                <p class="m-0">Provide your loan requirement.</p>
             </div>
             <div class="process-step active">
                 <div class="step-circle">02</div>
-                <h4 class="color--green-500">Personal Info</h4>
-                <p class="color--grey">Fill in your secure personal information.</p>
+                <h4 class="color--green-500 s-20">Fill Basic Details</h4>
+                <p class="m-0">Add personal and employment information.</p>
             </div>
             <div class="process-step">
                 <div class="step-circle">03</div>
-                <h4 class="color--green-500">Unlock Offers</h4>
-                <p class=" color--grey">Get the best loan offers instantly.</p>
+                <h4 class="color--green-500 s-20">Check Eligible Offers</h4>
+                <p class=" m-0">View loans available for you.</p>
             </div>
             <div class="process-step active">
                 <div class="step-circle">04</div>
-                <h4 class="color--green-500">Choose Plan</h4>
-                <p class="color--grey">Select a repayment option that suits you.</p>
+                <h4 class="color--green-500 s-20">Select Best Offer</h4>
+                <p class="m-0">Compare and choose the right option.</p>
             </div>
             <div class="process-step">
                 <div class="step-circle">05</div>
-                <h4 class="color--green-500">Get Approved</h4>
-                <p class="color--grey">Receive approval and funds quickly.</p>
+                <h4 class="color--green-500 s-20">Get Instant Approval</h4>
+                <p class="m-0">Receive loan approval and quick disbursement.</p>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- eligibility calculator starts -->
-<section id="features-21" class="pt-0 pb-80 features-section division">
+<section id="features-21" class="py-80 features-section division">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10">
