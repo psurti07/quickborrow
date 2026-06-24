@@ -278,10 +278,13 @@
                             <strong>Important Disclosure : </strong> AI Loans Private Limited is a service provider that connects users with third-party banks and NBFCs and does not provide loans directly. The repayment tenure for personal loans typically ranges from a minimum of 6 months to a maximum of 60 months (5 years), depending on the lender. The maximum Annual Percentage Rate (APR) can go up to 34.5% per annum, inclusive of applicable charges, depending on the applicant’s profile and lender policies.
                         </p>
                         <p class="s-14">
+                            <strong>Important Note : </strong> BE AWARE! We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly. Thanks!
+                        </p>
+                        <p class="s-14">
                             For example, if a user takes a loan of ₹5,00,000 at an interest rate of 12% per annum for 60 months, the processing fee may be up to 2% (₹10,000), the EMI would be approximately ₹11,122, the total interest payable would be around ₹1,67,320, and the total repayment amount would be approximately ₹6,67,320. All figures are indicative. Actual loan terms may vary depending on eligibility and lender criteria.
                         </p>
                         <p class="s-14">
-                            <strong>Disclaimer : </strong>AI Loans Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify all details and read the terms and conditions of the respective lender before proceeding.
+                            <strong>Disclaimer : </strong>AI Loans Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify all details and read the terms and conditions of the respective lender before proceeding. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
                         </p>
                         <p class="s-14">
                             <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile: {{ env('COMPANY_MOBILE') }} | Email: {{ env('INFO_EMAIL') }}

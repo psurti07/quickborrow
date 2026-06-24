@@ -3,59 +3,59 @@
 {{-- write or link your css file and styles tag here --}}
 <link href="{{ asset('front/css/custom.css') }}" rel="stylesheet" type="text/css" />
 <style>
-.resend-otp-div a.disabled {
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
-.bank-crousel {
-    display: block !important;
-}
-
-.radio:checked {
-    background: #0e5281;
-    border-color: #0e5281;
-}
-
-.testimonials-carousel .owl-item img {
-    width: 100% !important;
-}
-
-@media screen and (max-width: 767px) {
-    .hero-section {
-        padding-top: 10px !important;
+    .resend-otp-div a.disabled {
+        pointer-events: none;
+        cursor: not-allowed;
     }
-}
 
-.input-group-text {
-    color: #666;
-    border: none;
-    background-color: #f5f6f8;
-    line-height: 1.3;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
+    .bank-crousel {
+        display: block !important;
+    }
 
-.request-form .form-control:focus {
-    background-color: #f5f6f8;
-    border-color: #f5f6f8;
-    border: none;
-}
+    .radio:checked {
+        background: #0e5281;
+        border-color: #0e5281;
+    }
 
-@media screen and (max-width:991px) {
+    .testimonials-carousel .owl-item img {
+        width: 100% !important;
+    }
+
+    @media screen and (max-width: 767px) {
+        .hero-section {
+            padding-top: 10px !important;
+        }
+    }
+
     .input-group-text {
-        padding: 1.06rem 1.06rem;
+        color: #666;
+        border: none;
+        background-color: #f5f6f8;
+        line-height: 1.3;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
-}
 
-@media screen and (min-width:992px) and (max-width:1199px) {
-    .input-group-text {
-        padding: 1rem 1rem;
-        margin-top: 1px;
+    .request-form .form-control:focus {
+        background-color: #f5f6f8;
+        border-color: #f5f6f8;
+        border: none;
     }
-}
+
+    @media screen and (max-width:991px) {
+        .input-group-text {
+            padding: 1.06rem 1.06rem;
+        }
+    }
+
+    @media screen and (min-width:992px) and (max-width:1199px) {
+        .input-group-text {
+            padding: 1rem 1rem;
+            margin-top: 1px;
+        }
+    }
 </style>
 @endpush
 @section('content')
@@ -136,11 +136,11 @@
                         </div>
 
                         <p class="mb-0 s-14 text-start text-dark"><small>By submitting the form and proceeding, you agree to
-                            the <a href="{{ route('front.terms.conditions') }}" target="_blank"
-                                class="text-dark text-decoration-none">Terms of Use</a> and <a
-                                href="{{ route('front.privacy.policy') }}" class="text-dark text-decoration-none"
-                                target="_blank">Privacy Policy</a> of <a href="{{ route('front.home') }}"
-                                class="text-dark text-decoration-none" target="_blank">QuikBorrow.com.</a></small></p>
+                                the <a href="{{ route('front.terms.conditions') }}" target="_blank"
+                                    class="text-dark text-decoration-none">Terms of Use</a> and <a
+                                    href="{{ route('front.privacy.policy') }}" class="text-dark text-decoration-none"
+                                    target="_blank">Privacy Policy</a> of <a href="{{ route('front.home') }}"
+                                    class="text-dark text-decoration-none" target="_blank">QuikBorrow.com.</a></small></p>
                     </form>
                 </div>
             </div>
@@ -205,55 +205,55 @@
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
                                 <img class="img-fluid"
-                                src="{{ asset('front/images/Strategic-Lending-Network.png') }}" alt="feature-image">
+                                    src="{{ asset('front/images/Strategic-Lending-Network.png') }}" alt="feature-image">
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="col">
                     <div class="fbox-8 fb-2 r-12 border h-100">
-                          <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                        <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Completely Online Process</h4>
                             <p>From eligibility check to document submission, everything happens digitally.</p>
                         </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                  <img class="img-fluid"
-                                src="{{ asset('front/images/Completely-Online-Process.png') }}" alt="feature-image">
+                                <img class="img-fluid"
+                                    src="{{ asset('front/images/Completely-Online-Process.png') }}" alt="feature-image">
                             </div>
                         </div>
-                      
+
                     </div>
                 </div>
                 <div class="col">
                     <div class="fbox-8 fb-2 r-12 border h-100">
-                         <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                        <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Self-Apply Feature</h4>
                             <p>Take control of your finances while enjoying the benefits of excellent provisions.</p>
                         </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                          <img class="img-fluid"
-                                src="{{ asset('front/images/Quick-Self-Apply.png') }}" alt="feature-image">
+                                <img class="img-fluid"
+                                    src="{{ asset('front/images/Quick-Self-Apply.png') }}" alt="feature-image">
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
                 <div class="col">
                     <div class="fbox-8 fb-2 r-12 border h-100">
-                         <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
+                        <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Hire Loan Agent</h4>
                             <p>Get guidance from experienced professionals to improve your loan approval possibilities.</p>
                         </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
-                                  <img class="img-fluid"
-                                src="{{ asset('front/images/Loan-Agent.png') }}" alt="feature-image">
+                                <img class="img-fluid"
+                                    src="{{ asset('front/images/Loan-Agent.png') }}" alt="feature-image">
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -304,13 +304,15 @@
                             and NBFCs’ criteria, rules & regulations, and terms & conditions. AI Loans Private Limited
                             does not guarantee loan approval or disbursal. Terms & Conditions apply.
                         </p>
-
+                        <p class="s-14">
+                            <strong>Important Note : </strong> BE AWARE! We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly. Thanks!
+                        </p>
                         <p class="s-14">
                             <strong>Disclaimer : </strong>AI Loans Private Limited is not a lender or financial
                             institution. We do not provide loans or make credit decisions. All loan approvals, interest
                             rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do
                             not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify
-                            all details and read the terms and conditions of the respective lender before proceeding.
+                            all details and read the terms and conditions of the respective lender before proceeding.The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
                         </p>
                         <p class="s-14">
                             <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile:
@@ -382,61 +384,61 @@
 @endsection
 @push('scripts')
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const personalLoan = document.getElementById("personalloan");
-    const businessLoan = document.getElementById("businessloan");
+    document.addEventListener("DOMContentLoaded", function() {
+        const personalLoan = document.getElementById("personalloan");
+        const businessLoan = document.getElementById("businessloan");
 
-    const userTypeSelect = document.getElementById("user_type");
-    const options = userTypeSelect.querySelectorAll("option");
+        const userTypeSelect = document.getElementById("user_type");
+        const options = userTypeSelect.querySelectorAll("option");
 
-    function toggleUserTypeOptions() {
-        let type = "personal";
-        if (businessLoan && businessLoan.checked) type = "business";
+        function toggleUserTypeOptions() {
+            let type = "personal";
+            if (businessLoan && businessLoan.checked) type = "business";
 
-        // Show/Hide options based on loan type
-        options.forEach(option => {
-            if (option.dataset.loan === type) {
-                option.style.display = "block";
-            } else {
-                option.style.display = "none";
+            // Show/Hide options based on loan type
+            options.forEach(option => {
+                if (option.dataset.loan === type) {
+                    option.style.display = "block";
+                } else {
+                    option.style.display = "none";
+                }
+            });
+
+            // If current selected option is hidden, select first visible one
+            const selectedOption = userTypeSelect.options[userTypeSelect.selectedIndex];
+            if (selectedOption.style.display === "none") {
+                const firstVisible = [...options].find(opt => opt.style.display !== "none");
+                if (firstVisible) userTypeSelect.value = firstVisible.value;
             }
-        });
-
-        // If current selected option is hidden, select first visible one
-        const selectedOption = userTypeSelect.options[userTypeSelect.selectedIndex];
-        if (selectedOption.style.display === "none") {
-            const firstVisible = [...options].find(opt => opt.style.display !== "none");
-            if (firstVisible) userTypeSelect.value = firstVisible.value;
         }
-    }
 
-    // Run on load
-    toggleUserTypeOptions();
+        // Run on load
+        toggleUserTypeOptions();
 
-    // Run on change
-    if (personalLoan) personalLoan.addEventListener("change", toggleUserTypeOptions);
-    if (businessLoan) businessLoan.addEventListener("change", toggleUserTypeOptions);
-});
+        // Run on change
+        if (personalLoan) personalLoan.addEventListener("change", toggleUserTypeOptions);
+        if (businessLoan) businessLoan.addEventListener("change", toggleUserTypeOptions);
+    });
 </script>
 
 <script>
-const sendOtpUrl = @json(route('self.apply.send.otp'));
+    const sendOtpUrl = @json(route('self.apply.send.otp'));
 </script>
 <!-- write or link your script file and script tag here -->
 <script src="{{ asset('front/js/loanAgent.js') }}"></script>
 <script>
-window.onscroll = function() {
-    const btn = document.getElementById("goTopBtn");
-    btn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" :
-    "none";
-};
+    window.onscroll = function() {
+        const btn = document.getElementById("goTopBtn");
+        btn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" :
+            "none";
+    };
 
-// Scroll to top smoothly
-function goToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
+    // Scroll to top smoothly
+    function goToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 </script>
 @endpush
