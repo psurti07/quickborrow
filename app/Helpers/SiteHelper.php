@@ -809,7 +809,7 @@ if (!function_exists('getFacebookPixelKey')) {
     function getFacebookPixelKey()
     {
         $url = request()->segment(1);
-        $pxKey = (($url == 'loan-agent') ? 'la_facebookpixelkey' : (($url == 'loan-assistant') ? 'lat_facebookpixelkey' : 'sa_facebookpixelkey'));
+        $pxKey = ($url == 'loan-agent') ? 'la_facebookpixelkey' : 'sa_facebookpixelkey';
         return InfoPages::where('slug', $pxKey)->first()->content;
     }
 }
@@ -832,13 +832,6 @@ if (!function_exists('getFBConversionData')) {
                 'fbaccesstoken' => $data['la_facebookaccesstoken'] ?? '',
                 'fbeventname' => $data['la_facebookeventname'] ?? '',
                 'fbeventid' => $data['la_facebookeventid'] ?? ''
-            ];
-        } else if ($type == 'loan-assistant') {
-            $data = InfoPages::whereIn('slug', ['lat_facebookaccesstoken', 'lat_facebookeventname', 'lat_facebookeventid'])->get()->pluck('content', 'slug');
-            $arr_data[] = [
-                'fbaccesstoken' => $data['lat_facebookaccesstoken'] ?? '',
-                'fbeventname' => $data['lat_facebookeventname'] ?? '',
-                'fbeventid' => $data['lat_facebookeventid'] ?? ''
             ];
         } else {
             $arr_data['fbaccesstoken'] = $arr_data['fbeventname'] = $arr_data['fbeventid'] = '';
@@ -898,14 +891,15 @@ if (!function_exists('fbconversioncurl')) {
             $data["user_data"]["fbc"] = $userdata['fbclid'];
         }
         $orderAmount = $userdata['odamount'] / (1 + (18 / 100));
-        if ($ver == 11) {
+        
+        if($ver == 11 || $ver == 16){
             /* v11 code starts here */
-            $contents["id"] = "KB2025";
+            $contents["id"] = "MSF2026";
             $contents["quantity"] = 1;
             $data["contents"][] = $contents;
 
             $data["custom_data"]["currency"] = "INR";
-            $data["custom_data"]["value"] = $orderAmount;
+            $data["custom_data"]["value"] = formatePriceIndia($orderAmount);
             $data["custom_data"]["order_id"] = $userdata['orderid'];
             /* v11 code ends here */
         } else {
@@ -917,7 +911,7 @@ if (!function_exists('fbconversioncurl')) {
             $data["custom_data"]["order_id"] = $userdata['orderid'];
             $data["custom_data"]["status"] = "registered";
 
-            $contents["id"] = "KB2025";
+            $contents["id"] = "MSF2026";
             $contents["quantity"] = 1;
             $contents["item_price"] = formatePriceIndia($orderAmount);
             $data["custom_data"]["contents"] = array($contents);
@@ -932,9 +926,6 @@ if (!function_exists('fbconversioncurl')) {
         } else if ($userdata['type'] == 'hire-agent') {
             $fbpixel = InfoPages::where('slug', 'la_facebookpixelkey')->first()->content;
             $accesstoken = $fbaccesstoken;
-        } else if ($userdata['type'] == 'loan-assistant') {
-            $fbpixel = InfoPages::where('slug', 'lat_facebookpixelkey')->first()->content;
-            $accesstoken = $fbaccesstoken;
         } else {
             $fbpixel = '';
             $accesstoken = $fbaccesstoken;
@@ -946,8 +937,8 @@ if (!function_exists('fbconversioncurl')) {
         $fields['upload_tag'] = "orders"; // You should set a tag here (feel free to adjust)
         $fields['data'] = $data_json;
 
-        $curlUrl = (($ver == 11) ? "https://graph.facebook.com/v11.0/" . $fbpixel . "/events" : "https://graph.facebook.com/v21.0/" . $fbpixel . "/events");
-
+        $curlUrl = "https://graph.facebook.com/v{$ver}.0/{$fbpixel}/events";
+        
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_URL => $curlUrl,
@@ -967,6 +958,15 @@ if (!function_exists('fbconversioncurl')) {
 
         $response = curl_exec($curl);
         $err = curl_error($curl);
+        
+        Log::info('Facebook Conversion API Response', [
+            'response' => $response,
+            'decoded_response' => json_decode($response, true),
+            'curl_error' => $err,
+            'curl_errno' => curl_errno($curl),
+            'http_code' => curl_getinfo($curl, CURLINFO_HTTP_CODE),
+        ]);
+                
         curl_close($curl);
 
         if ($err) {
