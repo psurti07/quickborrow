@@ -1191,7 +1191,7 @@ class LoanAgentController extends Controller
                         $fbdata['fbclid'] = '';
                     }
 
-                    $fbresponse = fbconversioncurl($fbdata, 11);
+                    $fbresponse = fbconversioncurl($fbdata, 16);
                     $dataleads = array(
                         'rec_date' => now(),
                         'send_data' => json_encode($fbdata),
@@ -1605,7 +1605,7 @@ class LoanAgentController extends Controller
         return view('loanAgent.offers.offer-2', compact('meta', 'productData'));
     }
 
-    public function getOffer2(Request $request)
+    public function getOffer2_razorpay(Request $request)
     {
         try {
             $inputs = $request->all();
@@ -1693,7 +1693,7 @@ class LoanAgentController extends Controller
         }
     }
 
-    public function offer2Response(Request $request)
+    public function offer2Response_razorpay(Request $request)
     {
         try {
 
@@ -1769,6 +1769,250 @@ class LoanAgentController extends Controller
             }
         } catch (\Exception $e) {
             Log::info($e->getMessage());
+            dd('Ops! Something went wrong.');
+        }
+    }
+
+    public function getOffer2(Request $request)
+    {
+        try{
+            $inputs = $request->all();
+            $request->validate([
+                'first_name' => 'required',
+                'last_name' => 'required',
+                'email' => 'required|email',
+                'mobile' => ['required', 'numeric', 'regex:/^[6-9]\d{9}$/']
+            ]);
+            /* first check in user registration */
+            $profile = $this->checkUserProcess($inputs);
+            if($profile){
+                return response()->json($profile);
+            } else {
+                $first_name = $inputs ['first_name'];
+                $last_name = $inputs['last_name'];
+                $mobile = $inputs['mobile'];
+                $email = $inputs['email'];
+            }
+            /* product Data */
+            $products = Product::where('productslug', env('LA_OFFER_2'))->first();
+            //Log::info('products - '.json_encode($products));
+            /* set amount of offer */
+            $amount = ($products->inOffer == 1) ? $products->offeramount : $products->amount;
+            $grandAmount = $amount + ($amount * 0.18);
+
+            $uatNumbers = explode(',', env('UAT_MOBILE_NUMBERS', '')); // Convert the string into an array
+
+            foreach ($uatNumbers as $uatNum) {
+                if ($uatNum == $mobile) {
+                    $grandAmount = 1;
+                    break; // Exit the loop once a match is found
+                }
+            }
+
+            /* insert the adta in cardoffer */
+            $offerId = DB::table('cardoffer')->updateOrInsert(
+                ['mobile' => $mobile], // Search condition
+                [ // Values to update or insert
+                    'rec_date' => date('Y-m-d H:i:s'),
+                    'offerpage' => 2,
+                    'first_name' => $first_name,
+                    'last_name' => $last_name,
+                    'emailid' => $email,
+                    'amount' => round($grandAmount),
+                    'isCustomer' => 0,
+                    'isActive' => 0,
+                    'isDelete' => 0,
+                ]
+            );
+
+            // Get the ID of the updated or inserted record
+            $record = DB::table('cardoffer')->where('mobile', $mobile)->first();
+            $offerId = $record->id;
+
+            //Log::info('Offer data - '. $offerId);
+            $orderId = 'VEEGAH'.number_format(microtime(true) * 1000, 0, '.', '');
+            $encData = null;
+            $returnUrl = 'https://quikborrow.com/api/loan-agent/elite-offer-response';
+
+            /* veegah PG starts */
+            
+            $terminalId = env('VEEGAH_TERMINAL_ID');
+            $password = env('VEEGAH_TERMINAL_PASSWORD');
+            $mkey = env('VEEGAH_MERCHANT_KEY');
+            
+            // data sequence is - orderId|terminalId|password|merchantKey|amount|currency
+    		//$signdata = $orderid."|TER7990817|TER25041201011970543064|f5949cf7946afa557191b8a18504c2a847a6d9ff08c28ec2fd456322889d1451|".$roundamount."|INR";
+    		$signdata = $orderId."|".$terminalId."|".$password."|".$mkey."|".round($grandAmount)."|INR";
+            $signature = hash('sha256', $signdata);
+    		
+    		$postdata = array(
+                "referenceId"=> $orderId,
+                "terminalId"=> $terminalId,
+                "password"=> $password,
+                "signature"=>  $signature, //Generated signature
+                "paymentType"=> "1",
+                "amount"=> round($grandAmount),
+                "currency"=> "INR",
+                "order"=> array(
+                    "orderId"=> $orderId,  // Related orderId
+                    "description"=> "Premium Offer"
+                ),
+                "customer"=> array(
+                    "customerEmail"=> $email,
+                    "billingAddressStreet"=> '',
+                    "billingAddressCity"=> "",
+                    "billingAddressState"=> "",
+                    "billingAddressPostalCode"=> "",
+                    "billingAddressCountry"=> "IN"
+                ),
+                "additionalDetails"=> array(
+                    "userData"=> "{\"entryone\":\"abc\",\"entrytwo\":\"def\",\"entrythree\":\"xyz\",\"receiptUrl\":\"$returnUrl\"}"
+                ),
+            );
+    		
+    		$veegahData = array(
+                'rec_date' => date('Y-m-d H:i:s'),
+                'entryfor' => 8,//sa offer 3 or premium offer
+                'userid' => $offerId,
+                'orderid' => $orderId,
+                'orderamount' => round($grandAmount),
+                'ordernote' => $products->productname
+            );
+            
+            $res = VeegahEntry::insert($veegahData);
+            $prodUrl = "https://test-vegaah.concertosoft.com/vegaahpayments/v2/payments/pay-request";
+            if(env('VEEGAH_PROD')){
+                $prodUrl = "https://checkout.vegaah.com/vegaahpayments/v2/payments/pay-request";
+            }
+            $curl = curl_init();
+            curl_setopt_array($curl, [
+                CURLOPT_URL => $prodUrl,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS =>  json_encode($postdata),
+                CURLOPT_HTTPHEADER => [
+                    "Content-Type: application/json",
+                    "accept: application/json"
+                ],
+            ]);
+            $vegaahRes = curl_exec($curl);
+            $err = curl_error($curl);
+
+            curl_close($curl);
+
+            $post_decode_data =  json_decode($vegaahRes);
+            /* veegah PG ends */
+            if ($post_decode_data) {
+                if ($post_decode_data->paymentLink->linkUrl && $post_decode_data->transactionId) {
+                    $redirect_url = $post_decode_data->paymentLink->linkUrl.$post_decode_data->transactionId;
+                    return response()->json(array('type'=>'SUCCESS','message'=>'Please wait... We are redirecting to the payment page.','url'=>$redirect_url));
+                } else {
+                    return response()->json(array('type'=>'ERROR','url'=>route('self.apply.offer3')));
+                }
+            } else {
+                return response()->json(array('type'=>'ERROR','url'=>route('self.apply.offer3')));
+            }
+        } catch(ValidationException $e){
+            return response()->json(array('type' => 'ERROR', 'errors' => $e->errors()), 422);
+        } catch(\Exception $e){
+            Log::info($e->getMessage());
+            return response()->json(array('type' => 'ERROR', 'message' => 'Oops! Something went wrong.'));
+        }
+    }
+    
+    public function offer2Response(Request $request){
+        try{
+            $grandtotal = $netamount = $cgstamount = $sgstamount = $igstamount = 0;
+            $meta = selfApplyMeta();
+            
+            $jsonData = file_get_contents("php://input");
+            parse_str($jsonData, $parsedData);
+            unset($parsedData['termId']);
+            
+            $decodedData = urldecode($parsedData['data']);
+            $decodedData = str_replace(' ', '+', $decodedData);
+
+            $encryptedResponse = base64_decode($decodedData, true);
+
+            $merKey = env('VEEGAH_MERCHANT_KEY');
+            $binaryKey = hex2bin($merKey);
+
+            $decryptedData = openssl_decrypt($encryptedResponse, 'AES-256-ECB', $binaryKey, OPENSSL_RAW_DATA);
+            
+            if ($decryptedData === false) {
+			    return view('cardoffer-response', [ 'meta' => $meta, 'response' => FALSE]);
+			}
+
+			$resultdata = json_decode($decryptedData, true);
+			if ($resultdata === null) {
+				return view('cardoffer-response', [ 'meta' => $meta, 'response' => FALSE]);
+			}
+            
+            $paymentData = VeegahEntry::where('orderid', $resultdata['orderDetails']['orderId'])->first();
+            
+            $veegahData = array(
+                'rec_date' => now(),
+                'referenceid' => $resultdata['transactionId'],
+				'txstatus' => $resultdata['result'],
+				'paymentmode' => $resultdata['paymentInstrument']['paymentMethod']
+            );
+            $response1 = VeegahEntry::where('id', $paymentData->id)->update($veegahData);
+            $userData = Cardoffer::where('id',$paymentData->userid)->first();
+            if ($resultdata['result'] == 'SUCCESS') {
+				$isEntry = Cardoffer::where('paymentid', $resultdata['transactionId'])->where('isDelete', 0)->count();
+                if ($isEntry == 0) {
+                    $cardno = random_code_num(16);
+
+                    $data = array(
+                        'rec_date' => now(),
+                        'card_number' => $cardno,
+                        'registration_date' => Carbon::now()->toDateString(),
+                        'expiry_date' => Carbon::now()->addMonth()->toDateString(),
+                        'paymentid' => $resultdata['transactionId'],
+                        'isActive' => 1
+                    );
+                    $response = Cardoffer::where('id', $paymentData->userid)->update($data);
+
+                    if ($response) {
+                        $regUser = UserRegistration::where('mobile', $userData->mobile)
+                            ->where(['isActive' => 1, 'isDelete' => 0])
+                            ->first();
+
+                        if ($regUser) {
+                            $converted = convertIntoCustomer($cardno, $regUser, $userData, $paymentData->orderamount, $resultdata['transactionId'], 1, 'self-apply', 'SA_',8);
+                            if (!$converted) {
+                                Log::error("Conversion to customer failed for user: " . $regUser->id);
+                                dd('check log');
+                            }
+                        } else {
+                            $sent = sendPaymentGreetings($userData->first_name.' '.$userData->last_name, $userData->mobile, $userData->emailid);
+                        }
+                    }
+                    session()->forget(['isMailSend', 'cardno']);
+                    return view('cardoffer-response', [
+                        'meta' => $meta,
+                        'response' => TRUE,
+                    ]);
+                } else {
+                    //Log::info('Phone Pe TRUE Else');
+                    return view('cardoffer-response', [
+                        'meta' => $meta,
+                        'response' => TRUE,
+                    ]);
+                }
+            } else {
+                //Log::info('PhonePe False');
+                return view('cardoffer-response', [
+                        'meta' => $meta,
+                        'response' => FALSE,
+                    ]);
+            }
+        } catch(\Exception $e){
+            Log::info('An error occured in offer3 response - ' . $e->getMessage());
             dd('Ops! Something went wrong.');
         }
     }

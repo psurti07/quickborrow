@@ -224,7 +224,7 @@ $(document).ready(function() {
                     if (result.type === 'SUCCESS') {
                         toastr.success(result.message);
                         setTimeout(function() {
-                            window.location.href = result.redirect;
+                            window.location.href = result.url;
                         }, 5000);
                     } else {
                         toastr.error(result.message);
