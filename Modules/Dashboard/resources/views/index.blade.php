@@ -186,7 +186,7 @@
                                                                             </a>
                                                                             <a href="javascript:;" class="d-flex align-items-center text-gray-700 text-hover-success mb-2">
                                                                                 <i class="ki-duotone ki-sms fs-4 me-1"><span class="path1"></span><span class="path2"></span></i>
-                                                                                {{ $agent->emailid ?? 'info@ailoans.com' }}
+                                                                                {{ $agent->emailid ?? 'info@quikborrow.com' }}
                                                                             </a>
                                                                         </div>
                                                                     </div>

@@ -27,8 +27,8 @@
                         services from some of the industry’s brilliant minds. </p>
                     <a href="{{ route('self.apply.main') }}" class="btn r-04 btn--theme hover--tra-black last-link">Self
                         Apply</a>
-                    <a href="{{ route('loan.agent.main') }}" class="btn r-04 btn--theme hover--tra-black last-link">Hire
-                        an Agent</a>
+                    {{-- <a href="{{ route('loan.agent.main') }}" class="btn r-04 btn--theme hover--tra-black last-link">Hire
+                        an Agent</a> --}}
                 </div>
             </div>
         </div>
@@ -529,7 +529,7 @@
                                     <span class="s-16">Total amount</span>
                                     <span id="emitotalamount">₹<span>10,000</span></span>
                                 </div>
-                                <a href="{{ route('loan.agent.main') }}"
+                                <a href="{{ route('self.apply.main') }}"
                                     class="btn btn--green-400 hover--tra-black w-100">Apply for loan</a>
                             </div>
                         </div>
@@ -563,9 +563,8 @@
                         src="{{ asset('front/images/product-img.jpg') }}" alt="feature-image">
                 </div>
             </div>
-            <div class="col-12 col-lg-6 align-items-center m-auto mt-0">
-                <div class="row fbox-wrapper
-                     mb-0 fbox-8 fb-1 p-0 border-0">
+            <div class="col-12 col-lg-6 align-items-center m-auto">
+                <div class="row fbox-wrapper mb-0 fbox-8 fb-1 p-0 border-0">
                     <div class="col-12 col-lg-12">
                         <div class="txt-block right-column card-left p-4 r-12 mb-md-3 mb-0">
                             <div class="d-flex align-items-center mb-3">
@@ -587,7 +586,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12">
+                    {{-- <div class="col-12 col-lg-12">
                         <div class="left-column card-left p-4 r-12">
                             <div class="d-flex align-items-center mb-0">
                                 <div class="fbox-ico ico-50 text-end mb-0">
@@ -607,7 +606,7 @@
                                 Apply Now
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -914,7 +913,6 @@ $(document).ready(function() {
 <script>
 const routes = {
     'selfapply': "{{ route('self.apply.send.otp') }}",
-    'loan-agent': "{{ route('loan.agent.send.otp') }}"
 };
 
 document.addEventListener('DOMContentLoaded', () => {

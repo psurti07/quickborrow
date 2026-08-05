@@ -126,7 +126,7 @@ class HomeController extends Controller
            try {
                 $maildata = array(
                     'fullname' => "QuikBorrow HR",
-                    'email' => "info@ailoans.com"
+                    'email' => "info@quikborrow.com"
                 );
                 $maildata2 = array(
                     'fullname' => $input['firstname'].' '.$input['lastname'],
