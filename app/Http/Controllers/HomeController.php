@@ -142,7 +142,7 @@ class HomeController extends Controller
                 $message2 = view('mail.applyCareer',[
                     'name' => $input['firstname'].' '.$input['lastname'],
                 ])->render();
-                $attachmentPath = public_path('upload/resumes/' . $image_name);
+                $attachmentPath = public_path('public/upload/resumes/' . $image_name);
                 $sendMail = sendBrevoHtmlMail($maildata, $subject, $message1, 3, $attachmentPath);
                 $sendMail = sendBrevoHtmlMail($maildata2, $subject2, $message2, 3);
             } catch (\Exception $e) {
