@@ -188,7 +188,7 @@
                             </div>
                             <div class="card-body pt-0">
                                 <div id="kt_create_new_payment_method">
-                                    <div class="py-1">
+                                    {{-- <div class="py-1">
                                         <div class="py-3 d-flex flex-stack flex-wrap">
                                             <div class="d-flex align-items-center collapsible toggle active" data-bs-toggle="collapse" data-bs-target="#kt_create_new_payment_method_1" aria-expanded="true">
                                                 <div class="btn btn-sm btn-icon btn-active-color-primary ms-n3 me-2">
@@ -241,10 +241,10 @@
                                                 </div>
                                         </div>
                                     </div>
-                                    <div class="separator separator-dashed"></div>
+                                    <div class="separator separator-dashed"></div> --}}
                                     <div class="py-1">
                                         <div class="py-3 d-flex flex-stack flex-wrap">
-                                            <div class="d-flex align-items-center collapsible toggle collapsed" data-bs-toggle="collapse" data-bs-target="#kt_create_new_payment_method_2" aria-expanded="false">
+                                            <div class="d-flex align-items-center collapsible toggle collapsed" data-bs-toggle="collapse" data-bs-target="#kt_create_new_payment_method_2" aria-expanded="true">
                                                 <div class="btn btn-sm btn-icon btn-active-color-primary ms-n3 me-2">
                                                     <i class="ki-duotone ki-minus-square toggle-on text-primary fs-2"><span class="path1"></span><span class="path2"></span></i>
                                                     <i class="ki-duotone ki-plus-square toggle-off fs-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>

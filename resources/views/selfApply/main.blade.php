@@ -65,8 +65,8 @@
         <div class="row">
             <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form mb-lg-0 mb-3">
                 <div id="hero-8-form" class="border border-primary r-06">
-                    <h4 class="s-20 w-700 mb-2">Apply in <span class="color--green-500">5 Minutes</span></h4>
-                    <p class="s-16">Get instant pre-approved offers.</p>
+                    <h4 class="s-20 w-700 mb-2">Find the Right <span class="color--green-500">Loan Option</span></h4>
+                    <p class="s-16">Connect with lending partners through a simple digital process.</p>
                     <form method="post" action="{{ route('self.apply.send.otp') }}" class="request-form save-form-1 needs-validation" novalidate>
                         <div class="row g-2">
                             <div class="col-md-12">
@@ -215,7 +215,7 @@
                     <div class="fbox-8 fb-2 r-12 border h-100">
                          <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Self-Apply Feature</h4>
-                            <p>Take control of your finances while enjoying the benefits of excellent provisions.</p>
+                            <p>Apply online and explore available loan options based on eligibility.</p>
                         </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
@@ -230,7 +230,7 @@
                     <div class="fbox-8 fb-2 r-12 border h-100">
                          <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Hire Loan Agent</h4>
-                            <p>Get guidance from experienced professionals to improve your loan approval possibilities.</p>
+                            <p>Get expert guidance throughout your loan application process.</p>
                         </div>
                         <div class="fbox-ico ico-50">
                             <div class="shape-ico color--theme">
@@ -275,19 +275,19 @@
                 <div class="form-holder">
                     <div class="contact-form-notice">
                         <p class="s-14">
-                            <strong>Important Disclosure : </strong> Quikborrow Private Limited is a service provider that connects users with third-party banks and NBFCs and does not provide loans directly. The repayment tenure for personal loans typically ranges from a minimum of 6 months to a maximum of 60 months (5 years), depending on the lender. The maximum Annual Percentage Rate (APR) can go up to 34.5% per annum, inclusive of applicable charges, depending on the applicant’s profile and lender policies.
+                            <strong>Important Note : </strong> We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly.
                         </p>
                         <p class="s-14">
-                            <strong>Important Note : </strong> BE AWARE! We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly. Thanks!
+                            <strong>Disclaimer : </strong>QuikBorrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms.
                         </p>
                         <p class="s-14">
-                            For example, if a user takes a loan of ₹5,00,000 at an interest rate of 12% per annum for 60 months, the processing fee may be up to 2% (₹10,000), the EMI would be approximately ₹11,122, the total interest payable would be around ₹1,67,320, and the total repayment amount would be approximately ₹6,67,320. All figures are indicative. Actual loan terms may vary depending on eligibility and lender criteria.
+                            The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.
                         </p>
                         <p class="s-14">
-                            <strong>Disclaimer : </strong>Quikborrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify all details and read the terms and conditions of the respective lender before proceeding. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
+                            <strong>Pre-Application Note : </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
                         </p>
                         <p class="s-14">
-                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile: {{ env('COMPANY_MOBILE') }} | Email: {{ env('INFO_EMAIL') }}
+                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> <strong>Mobile:</strong> {{ env('COMPANY_MOBILE') }} | <strong>Email:</strong> {{ env('INFO_EMAIL') }}
                         </p>
                     </div>
                 </div>
