@@ -291,32 +291,22 @@
                 <div class="form-holder">
                     <div class="contact-form-notice">
                         <p class="s-14">
-                            <strong>Important Disclosure : </strong> The loan tenure ranges from a minimum of 6 months
-                            to a maximum of 60 months (5 years), depending on the lender’s policies. The Annual
-                            Percentage Rate (APR) will be between 11.5% to 34% per annum, inclusive of interest rate and
-                            applicable charges. Processing fees may apply up to 2% of the approved loan amount.
-                            Representative Example, for a loan amount of ₹1,00,000 at an interest rate of 11.5% per
-                            annum for a tenure of 60 months (5 years), with a processing fee of 2% (₹2,000), the
-                            approximate EMI would be ₹2,301, the total interest payable would be approximately ₹38,059,
-                            and the total repayment amount would be approximately ₹1,38,059, resulting in an APR of
-                            approximately 14.41% including applicable charges. *T&C Apply. All these numbers are
-                            tentative/indicative, the final loan specifics may vary depending upon the customer profile
-                            and NBFCs’ criteria, rules & regulations, and terms & conditions. Quikborrow Private Limited
-                            does not guarantee loan approval or disbursal. Terms & Conditions apply.
+                            <strong>Important Note : </strong> We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly.
                         </p>
                         <p class="s-14">
-                            <strong>Important Note : </strong> BE AWARE! We ask our customers to make payments ONLY on our website quikborrow.com and NOT through any other source, directly or indirectly. Thanks!
+                            <strong>Disclaimer : </strong>QuikBorrow Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms.
                         </p>
                         <p class="s-14">
-                            <strong>Disclaimer : </strong>Quikborrow Private Limited is not a lender or financial
-                            institution. We do not provide loans or make credit decisions. All loan approvals, interest
-                            rates, fees, and disbursal are handled by third-party lenders such as banks and NBFCs. We do
-                            not guarantee loan approval, disbursal, or specific loan terms. Users are advised to verify
-                            all details and read the terms and conditions of the respective lender before proceeding.The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
+                            The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.
                         </p>
                         <p class="s-14">
-                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> Mobile:
-                            {{ env('COMPANY_MOBILE') }} | Email: {{ env('INFO_EMAIL') }}
+                            <strong>Pre-Application Note : </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
+                        </p>
+                        <p class="s-14">
+                            <strong>Disclosure : </strong>Loan tenure ranges from 6 to 60 months; processing fee: up to 2% of the approved loan amount. Representative example: ₹1,00,000 at 11.5% for 60 months with ₹2,000 processing fee — EMI ₹2,301, total interest ₹38,059, total repayment ₹1,38,059, indicative APR 14.41%.
+                        </p>
+                        <p class="s-14">
+                            <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> <strong>Mobile:</strong> {{ env('COMPANY_MOBILE') }} | <strong>Email:</strong> {{ env('INFO_EMAIL') }}
                         </p>
                     </div>
                 </div>

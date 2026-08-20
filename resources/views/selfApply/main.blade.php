@@ -287,6 +287,9 @@
                             <strong>Pre-Application Note : </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
                         </p>
                         <p class="s-14">
+                            <strong>Disclosure : </strong>Loan tenure ranges from 6 to 60 months; processing fee: up to 2% of the approved loan amount. Representative example: ₹1,00,000 at 11.5% for 60 months with ₹2,000 processing fee — EMI ₹2,301, total interest ₹38,059, total repayment ₹1,38,059, indicative APR 14.41%.
+                        </p>
+                        <p class="s-14">
                             <strong>Registered Office Address:</strong> {{ env('COMPANY_ADDRESS') }} <br /> <strong>Mobile:</strong> {{ env('COMPANY_MOBILE') }} | <strong>Email:</strong> {{ env('INFO_EMAIL') }}
                         </p>
                     </div>
