@@ -1017,7 +1017,11 @@ class SelfApplyController extends Controller
                         'inv_igst' => $igstamount,
                         'inv_grandtotal' => $grandtotal,
                     );
+                    Log::info('Order API Request:', ['remote_data' => $remote_data,]);
+
                     $api_response = sendOrderData(json_encode($remote_data));
+
+                    Log::info('Order API Response:', ['response' => $api_response,]);
 
                     $redRoute = 'self-apply/paymentSuccess'; // Row was updated
                 } else {
