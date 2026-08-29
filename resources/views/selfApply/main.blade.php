@@ -180,7 +180,7 @@
             </div>
         </div>
         <div class="fbox-wrapper text-center">
-            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
                     <div class="fbox-8 fb-1 r-12 border h-100">
                         <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
@@ -226,7 +226,7 @@
                        
                     </div>
                 </div>
-                <div class="col">
+                {{-- <div class="col">
                     <div class="fbox-8 fb-2 r-12 border h-100">
                          <div class="fbox-txt text-start mb-3 pb-md-0 pb-5">
                             <h4 class="s-18 w-700">Hire Loan Agent</h4>
@@ -240,7 +240,7 @@
                         </div>
                        
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
