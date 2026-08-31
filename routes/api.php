@@ -45,8 +45,8 @@ Route::post('/loan-agent/silver-offer-response/{orderid}',[LoanAgentController::
 Route::post('/self-apply/prime-offer-response',[SelfApplyController::class, 'offer1Response'])->name('api.self.apply.prime-offer-response');
 Route::post('/self-apply/mega-offer-response',[SelfApplyController::class, 'offer2Response'])->name('api.self.apply.mega-offer-response');
 Route::post('/self-apply/premium-offer-response',[SelfApplyController::class, 'offer3Response'])->name('api.self.apply.premium-offer-response');
-// Route::post('/self-apply/star-offer-response',[SelfApplyController::class, 'offer4Response'])->name('api.self.apply.offer4Response');
-Route::post('/self-apply/star-offer-response/{orderId}/{token}',[SelfApplyController::class, 'offer4Response'])->name('api.self.apply.offer4Response');
+Route::post('/self-apply/star-offer-response',[SelfApplyController::class, 'offer4Response'])->name('api.self.apply.offer4Response');
+// Route::post('/self-apply/star-offer-response/{orderId}/{token}',[SelfApplyController::class, 'offer4Response'])->name('api.self.apply.offer4Response');
 Route::get('/self-apply/great-offer-response/{orderId}/{token}',[SelfApplyController::class, 'offer5Response'])->name('api.self.apply.offer5Response');
 //Route::post('/airpayrespon',[SelfApplyController::class, 'offer5Response'])->name('api.self.apply.offer5Response');
 Route::post('/self-apply/standard-offer-response/{orderid}',[SelfApplyController::class, 'offer6Response'])->name('api.self.apply.offer6Response');
