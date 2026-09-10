@@ -19,7 +19,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         /*$schedule->command('app:customers-plan-expire')->dailyAt('01:00');*/
-        // $schedule->command('sms:sa-lead-cycle')->everyFifteenMinutes();
+        $schedule->command('sms:sa-lead-cycle')->everyFifteenMinutes();
         // $schedule->command('sms:la-lead-cycle')->everyFifteenMinutes();
         // $schedule->command('sms:sa-customer-cycle')->everyFifteenMinutes();
        
