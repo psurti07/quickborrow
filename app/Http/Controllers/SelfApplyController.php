@@ -495,7 +495,7 @@ class SelfApplyController extends Controller
     }
 
     /* checkout the data */
-    public function checkout_razorpay(Request $request)
+    public function checkout(Request $request)
     {
         try {
             $inputs = $request->all();
@@ -557,7 +557,7 @@ class SelfApplyController extends Controller
         }
     }
 
-    public function checkout(Request $request)
+    public function checkout_easebuzz(Request $request)
     {
         try {
             $inputs = $request->all();
@@ -646,7 +646,7 @@ class SelfApplyController extends Controller
         dd('Callback function call.Go Back and make furthur process');
     }
 
-    public function buyDigitalPlan_razorpay(Request $request)
+    public function buyDigitalPlan(Request $request)
     {
         try {
             $grandtotal = $netamount = $cgstamount = $sgstamount = $igstamount = 0;
@@ -893,7 +893,7 @@ class SelfApplyController extends Controller
         }
     }
 
-    public function buyDigitalPlan(Request $request)
+    public function buyDigitalPlan_easebuzz(Request $request)
     {
         log::info('buyDigitalPlan - Request Data:', ['request' => $request->all()]);
         try {
