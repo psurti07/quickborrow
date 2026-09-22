@@ -65,8 +65,8 @@
         <div class="row">
             <div class="col-md-6 col-lg-6 align-items-center m-auto self-apply-form mb-lg-0 mb-3">
                 <div id="hero-8-form" class="border border-primary r-06">
-                    <h4 class="s-20 w-700 mb-2">Find the Right <span class="color--green-500">Loan Option</span></h4>
-                    <p class="s-16">Connect with lending partners through a simple digital process.</p>
+                    <h4 class="s-20 w-700 mb-2">Explore Personal & Business <span class="color--green-500">Loans</span></h4>
+                    <p class="s-16">Select your loan type and provide a few details to begin exploring available options.</p>
                     <form method="post" action="{{ route('self.apply.send.otp') }}" class="request-form save-form-1 needs-validation" novalidate>
                         <div class="row g-2">
                             <div class="col-md-12">
