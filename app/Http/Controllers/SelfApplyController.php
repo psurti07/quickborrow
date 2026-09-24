@@ -120,7 +120,7 @@ class SelfApplyController extends Controller
                         'utm_campaign' => Cookie::get('utm_campaign'),
                         'utm_medium' => Cookie::get('utm_medium'),
                         'utm_referral' => Cookie::get('utm_referral'),
-                        'source_id' => Cookie::get('sourceId'),
+                        'source_id' => session('sourceId'),
                         'client_ip' => $request->ip()
                     ]);
 
@@ -129,7 +129,7 @@ class SelfApplyController extends Controller
                         DB::table('fb_ads_entry')->insertGetId([
                             'rec_date' => now(),
                             'userid' => $user->id,
-                            'fbclid' => Cookie::get('sourceId')
+                            'fbclid' => session('sourceId')
                         ]);
                     }
 
@@ -254,7 +254,7 @@ class SelfApplyController extends Controller
                     'utm_campaign' => Cookie::get('utm_campaign'),
                     'utm_medium' => Cookie::get('utm_medium'),
                     'utm_referral' => Cookie::get('utm_referral'),
-                    'source_id' => Cookie::get('sourceId'),
+                    'source_id' => session('sourceId'),
                     'client_ip' => $request->ip()
                 ]);
 
@@ -262,7 +262,7 @@ class SelfApplyController extends Controller
                 $fbid = DB::table('fb_ads_entry')->insertGetId([
                     'rec_date' => now(),
                     'userid' => $userid,
-                    'fbclid' => Cookie::get('sourceId')
+                    'fbclid' => session('sourceId')
                 ]);
                 // fb ends code
 
@@ -1139,6 +1139,7 @@ class SelfApplyController extends Controller
     /* paymentSuccess handle function */
     public function paymentSuccess()
     {
+        Log::info('paymentSuccess data - ' . json_encode(request()->all()));
         $meta = selfApplyMeta();
         try {
             $loanType = Cookie::get('loan_type');
@@ -1148,7 +1149,7 @@ class SelfApplyController extends Controller
 
             $orderData = '';
             $data = '';
-
+            Log::info('paymentSuccess - loanType: ' . $loanType . ', applyId: ' . $applyId . ', orderId: ' . $orderId . ', responsecode: ' . $responsecode);
             if (isset($loanType, $applyId, $orderId) && $loanType !== null && $applyId !== null && $orderId !== null) {
                 $data = array(
                     'loantype' => $loanType,
@@ -1159,9 +1160,9 @@ class SelfApplyController extends Controller
                 $lastname = strtolower($userData->last_name);
                 $city = strtolower(preg_replace("/[^a-zA-Z]+/", "", $userData->city));
                 $state = strtolower(getStateAbbreviation($userData->state));
-                $orderData = orderdata($orderId, 'easebuzz_entry');
+                $orderData = orderdata($orderId, 'razorpayentry');
 
-                if (isset($responsecode) && $responsecode == 'success') {
+                if (isset($responsecode) && $responsecode == '100') {
                     UserRegistration::where('id', $userData->userid)->update(['process_step' => 5]);
 
                     $staffID = assignAgentSelf();
