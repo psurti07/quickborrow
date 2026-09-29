@@ -59,7 +59,7 @@ if(!function_exists('sendDynamicSMS')){
 
         // Construct the API URL
         if($type == 'forget-password'){
-            $api_url = "http://m.onlinebusinessbazaar.in/sendsms.jsp?user={$username}&password={$password}&senderid={$senderId}&mobiles={$mobile}&sms={$sms_text}&tempid=1707177692941930416";
+            $api_url = "http://m.onlinebusinessbazaar.in/sendsms.jsp?user={$username}&password={$password}&senderid={$senderId}&mobiles={$mobile}&sms={$sms_text}&tempid=1707177987978852662";
         } elseif($tempId!=''){
             $api_url = "http://m.onlinebusinessbazaar.in/sendsms.jsp?user={$username}&password={$password}&senderid={$senderId}&mobiles={$mobile}&sms={$sms_text}&tempid={$tempId}";
         } else {

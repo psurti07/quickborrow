@@ -116,7 +116,7 @@ class AuthController extends Controller
                 if($msg != '#'){
                     // $msg = str_ireplace('{#varpassword#}',$newPassword,$msg);
                     $msg = preg_replace('/{#var#}/', $fetch->first_name, $msg, 1);
-                    $msg = preg_replace('/{#var#}/', $newPassword, $msg, 1);
+                    $msg = preg_replace('/{#varpassword#}/', $newPassword, $msg, 1);
             
                     $sendertype = (($fetch->acc_type == 2) ? 'la-senderid' : (($fetch->acc_type == 3) ? 'lat-senderid' : 'sa-senderid'));
                     $panel = (($fetch->acc_type == 2) ? 'hire' : (($fetch->acc_type == 3) ? 'assistant' : 'self'));
