@@ -117,13 +117,6 @@ class SALeadSmsServices
                                     <message>{$trackingMsg}</message>
                                     <accusage>1</accusage>
                                     <senderid>{$senderId}</senderid>
-                                </sms><sms>
-                                    <user>" . env('SMS_OBB_USERNAME') . "</user>
-                                    <password>" . env('SMS_OBB_PASSWORD') . "</password>
-                                    <mobiles>8128858228</mobiles>
-                                    <message>{$trackingMsg}</message>
-                                    <accusage>1</accusage>
-                                    <senderid>{$senderId}</senderid>
                                 </sms>";
                                 // Send SMS only if dataset has value
                                 if (!empty($dataset)) {
